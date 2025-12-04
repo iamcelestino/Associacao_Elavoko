@@ -1,0 +1,25 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio, here you find my work, and more about myself",
+  "homepage": "https://github.com/iamcelestino/Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/iamcelestino/Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamcelestino/Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Celestino Trosso",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx sass sass/index.scss styles/style.css"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.94.2"
+  }
+}
