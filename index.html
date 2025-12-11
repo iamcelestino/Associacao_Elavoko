@@ -3,43 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Associação Elavoko</title>
 </head>
 <body>
     <header id="header">
-        <div class="nav">
-            <div class="">
-                <img src="images/logo-associação-elavoko.png" alt="logo-associação-elavoko">
+        <div class="container">
+            <div class="nav">
+                <img class="logo" src="images/logo-associação-elavoko.png" alt="logo-associação-elavoko">
+                <div>
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Sobre Nós</a></li>
+                            <li><a href="">O que fazemos</a></li>
+                            <li><a href="">Contactos</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <div class="nav_button">
+                            <a href="">Fazer Doação</a>
+                        </div>
+                        <div class="burger_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flyout_menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre Nós</a></li>
+                        <li><a href="">O que fazemos</a></li>
+                        <li><a href="">Contactos</a></li>
+                    </ul>
+                </div>
             </div>
-            <nav class="">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">O que fazemos</a></li>
-                    <li><a href="">Contactos</a></li>
-                </ul>
-            </nav>
             <div class="">
-                <a href="">Fazer Doação</a>
+                <div>
+                    <h1>Elavoko, <span>juntos</span> somos imbativeis</h1>
+                </div>
+            </div>
+            <div class="mission">
+                <div class="">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga?</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nobis laborum error, aperiam corrupti inventore quae et consequatur ipsam fugit illo magni quaerat. Cupiditate consequatur perspiciatis ab rerum deleniti praesentium.</p>
+                </div>
+                <div class="">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga?</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nobis laborum error, aperiam corrupti inventore quae et consequatur ipsam fugit illo magni quaerat. Cupiditate consequatur perspiciatis ab rerum deleniti praesentium.</p>
+                </div>
+                <div class="">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga?</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nobis laborum error, aperiam corrupti inventore quae et consequatur ipsam fugit illo magni quaerat. Cupiditate consequatur perspiciatis ab rerum deleniti praesentium.</p>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section id="hero">
+        <!-- <section id="suporters">
             <div class="container">
-                <div>
-                    <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                <div class="companies">
+                    <div><ion-icon name="logo-windows"></ion-icon></div>
+                    <div><ion-icon name="logo-windows"></ion-icon></div>
+                    <div><ion-icon name="logo-windows"></ion-icon></div>
+                    <div><ion-icon name="logo-windows"></ion-icon></div>
+                    <div><ion-icon name="logo-windows"></ion-icon></div>
+                </div>
+            </div>
+        </section> -->
+        <section id="about_us">
+            <div class="container">
+                <div class="flex">
                     <div class="">
-                        <a href="">O que fazemos</a>
-                        <a href="">Ver Video</a>
+                        <div class="heading">
+                            <h3>Saiba mais sobre nós</h3>
+                              <p class="underline">__________</p>
+                        </div>
+                        <div>
+                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis quaerat, cum ratione a doloribus qui rem aliquam laboriosam amet nesciunt eveniet, facere necessitatibus quos nam id debitis dignissimos hic.</p>
+                            <div class="values">
+                                <div class="">
+                                    <div class="title">
+                                        <ion-icon name="eye"></ion-icon>
+                                        <h4>Visao</h4>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa laboriosam molestiae illo magnam sunt ullam quo ex ad accusamus, impedit cupiditate odit assumenda, consequatur commodi, quidem ducimus nam? Ratione, ea!</p>
+                                </div>
+                                <div class="">
+                                    <div class="title">
+                                       <ion-icon name="document-text"></ion-icon>
+                                        <h4>Missão</h4>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa laboriosam molestiae illo magnam sunt ullam quo ex ad accusamus, impedit cupiditate odit assumenda, consequatur commodi, quidem ducimus nam? Ratione, ea!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="images/482107727_640774758686495_137282257942962448_n.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about_us">
+        
+        <!-- <section id="what_we_do">
             <div class="container">
                 <div class="">
                     <div class="">
@@ -49,10 +124,9 @@
                         </div>
                         <div>
                             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum?</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis quaerat, cum ratione a doloribus qui rem aliquam laboriosam amet nesciunt eveniet, facere necessitatibus quos nam id debitis dignissimos hic.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, cumque ullam sunt repellendus consequatur officia asperiores, iure optio minus reprehenderit eos exercitationem non ratione? Placeat nesciunt deleniti doloribus nam culpa?
-                            </p>
-                            <a href="">Saber Mais</a>
+                            <div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="">
@@ -60,33 +134,217 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="suporters">
-            <div class="container">
-                <div class="">
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                </div>
-            </div>
-        </section>
-        <section id="what_we_do">
+        </section> -->
+        <!-- <section class="projects">
             <div class="container">
                 <div class="">
                     <div class="">
-                        
+                            <div>
+                                <ion-icon name="remove-outline"></ion-icon>
+                                <h3>Projectos em Carteira</h3>
+                            </div>
+                            <div>
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum?</h2>
+                            </div>
                     </div>
                     <div class="">
+                        <div class="">
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto id nostrum ratione.</p>
+                            <a href="">saber mais</a>
+                        </div>
+                        <div class="">
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto id nostrum ratione.</p>
+                            <a href="">saber mais</a>
+                        </div>
+                        <div class="">
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto id nostrum ratione.</p>
+                            <a href="">saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="achievements">
+            <div class="container">
+                
+                <div class="achievements-header">
+                    <h3 class="fun-title">Our Fun Facts</h3>
+                    <p class="underline"></p>
+                    <h1 class="main-title">We Believe That We Can Save More Lives With You</h1>
+                </div>
 
+                <div class="achievement_box">
+                    <div class="achievement">
+                        <div class="icon_wrap">
+                            <ion-icon name="reload-circle-outline"></ion-icon>
+                        </div>
+                        <h2>4597+</h2>
+                        <p>criancas</p>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="icon_wrap">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                        </div>
+                        <h2>8945+</h2>
+                        <p>criancas</p>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="icon_wrap">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <h2>10M+</h2>
+                        <p>criancas</p>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="icon_wrap">
+                            <ion-icon name="globe-outline"></ion-icon>
+                        </div>
+                        <h2>100+</h2>
+                        <p>criancas</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section class="testimonials">
+            <div class="container">
+                <div class="">
+                    <div class="">
+                        <div>
+                            <ion-icon name="remove-outline"></ion-icon>
+                            <h3>Saiba mais sobre nós</h3>
+                        </div>
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum?</h1>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <h1>Quote</h1>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="">
+            <div class="container">
+                <div class="">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, facere.</h2>
+                    <div>
+                        <a href="">Juntar a causa</a>
+                        <a href="">Fazer Doação</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="Frequently_asked_questions">
+            <div class="container">
+                <div class="">
+                    <div>
+                        <ion-icon name="remove-outline"></ion-icon>
+                        <h3>Saiba mais sobre nós</h3>
+                    </div>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum?</h1>
+                </div>
+                <div class="">
+                    <div>
+                        <div class="">
+                            <h4>Quem somos</h4>
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta rerum ducimus tempora, necessitatibus ipsum libero consequuntur, ex debitis, unde quaerat soluta commodi? Perspiciatis ipsum fugit repudiandae cumque unde laboriosam quidem?</p>
+                        </div>
+                    </div>
+                                        <div>
+                        <div class="">
+                            <h4>Quem somos</h4>
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta rerum ducimus tempora, necessitatibus ipsum libero consequuntur, ex debitis, unde quaerat soluta commodi? Perspiciatis ipsum fugit repudiandae cumque unde laboriosam quidem?</p>
+                        </div>
+                    </div>
+                                        <div>
+                        <div class="">
+                            <h4>Quem somos</h4>
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta rerum ducimus tempora, necessitatibus ipsum libero consequuntur, ex debitis, unde quaerat soluta commodi? Perspiciatis ipsum fugit repudiandae cumque unde laboriosam quidem?</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="">
-
-    </footer>
+    <!-- <footer ="footer">
+        <div class="container">
+            <div>
+                <div class="">
+                    <img src="images/logo-associação-elavoko.png" alt="">
+                    <p>Angola, Benguela, Bairro 11, Kapululu</p>
+                    <div class="socials">
+                        <div>
+                            <a href="">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </div>
+                         <div>
+                            <a href="">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                         <div>
+                            <a href="">
+                               <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </div>
+                         <div>
+                            <a href="">
+                               <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ol>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="">
+                <p> &copy;Associação Elavoko</p>
+                <div class="">
+                    <p>feito por Celestino Trosso</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 </body>
 </html>

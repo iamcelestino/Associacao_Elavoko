@@ -6,6 +6,37 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+    .heading {
+        display: flex;
+
+        p {
+            margin-left: 0.4rem;
+        }
+
+    }
+
+    
+        .underline {
+            color: #58ACDD;
+            font-weight: 800;
+        }
+
 li {
     list-style: none;
 }
