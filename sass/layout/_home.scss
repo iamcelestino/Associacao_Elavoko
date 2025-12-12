@@ -1,11 +1,6 @@
 
 #about_us {
 
-    ion-icon {
-        font-size: xx-large;
-    }
-
-
     .flex {
         display: flex;
         align-items: center;
@@ -20,6 +15,21 @@
             display: flex;
             align-items: center;
             gap: 10px;
+
+            .icon_wrap {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #e0f4ee;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+                ion-icon {
+                    font-size: 35px;
+                    color: #58ACDD;
+                }
+            }
 
             > div {
                 background-color: #58ACDD;
@@ -49,7 +59,9 @@
 }
 
 #achievements {
+
     .achievement_box {
+
         display: flex;
         justify-content: space-between;
         gap: 10px;
@@ -68,71 +80,140 @@
     }
 
     #achievements {
-    padding: 80px 0;
-    background: #ffffff;
+        padding: 80px 0;
+        background: #ffffff;
+    }
+
+    .achievements-header {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .fun-title {
+        font-size: 18px;
+        color: #444;
+    }
+
+    .main-title {
+        font-size: 32px;
+        font-weight: 600;
+        color: #222;
+    }
+
+    .achievement_box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .achievement {
+        text-align: center;
+        padding: 40px 20px;
+        background: #e8f7f2;    
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .achievement:hover {
+        background: #bbe3fa;
+    }
+
+    .icon_wrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #e0f4ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .icon_wrap ion-icon {
+        font-size: 40px;
+        color: #58ACDD;
+    }
+
+    .achievement h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #222;
+    }
+
+    .achievement p {
+        font-size: 14px;
+        color: #666;
+    }
+
 }
 
-.achievements-header {
-    text-align: left;
-    margin-bottom: 40px;
+#frequently_asked_questions {
+
+    .question_answer_wrap {
+    }
+
+    .question_box {
+        border: 2px solid #58ACDD;
+        border-radius: 5px;
+
+        .question {
+            background-color: #58ACDD;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .answer, .question {
+            padding: 1rem;
+        }
+    }
+
 }
 
-.fun-title {
-    font-size: 18px;
-    color: #444;
-}
+#call_to_action {
 
-.main-title {
-    font-size: 32px;
-    font-weight: 600;
-    color: #222;
-}
+    .call_to_action_wrap {
+        height: 400px;
+        background:
+        linear-gradient(rgba(109, 53, 142, 0.6), rgba(109, 53, 142, 0.6)),
+        url('/images/call_to_action_img.jpg') center/cover no-repeat;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-.achievement_box {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
+        > div {
 
-.achievement {
-    text-align: center;
-    padding: 40px 20px;
-    background: #e8f7f2;    
-    border-radius: 5px;
-    transition: 0.3s;
-}
+            h1 {
+                max-width: 50%;
+                margin: auto;
+            }
+        }
 
-.achievement:hover {
-    background: #bbe3fa;
-}
+        a {
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            padding: 0.9rem;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-.icon_wrap {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #e0f4ee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 20px;
-}
 
-.icon_wrap ion-icon {
-    font-size: 40px;
-    color: #58ACDD;
-}
+        .call_to_action_buttons {
+            text-align: center;
 
-.achievement h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #222;
-}
+            a:first-child {
+                background-color: #58ACDD;
+            }
 
-.achievement p {
-    font-size: 14px;
-    color: #666;
-}
+            a:last-child {
+                border: 2px solid #58ACDD;
+            }
+
+        }
+    }
 
 }
