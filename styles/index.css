@@ -58,10 +58,6 @@ a {
   text-decoration: none;
 }
 
-#header {
-  height: 100vh;
-  background: linear-gradient(rgba(109, 53, 142, 0.6), rgba(109, 53, 142, 0.6)), url("/images/hero_image.jpg") center/cover no-repeat;
-}
 #header h1 {
   font-size: 3.9rem;
   max-width: 55%;
@@ -72,7 +68,8 @@ a {
   max-width: 10%;
 }
 #header .nav {
-  padding: 1rem 0;
+  background: #22112c;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,6 +82,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#header .nav .navigation ul li {
+  border-bottom: 2px solid #58ACDD;
+  padding-bottom: 0.3rem;
 }
 #header .nav a {
   color: white;
@@ -138,6 +139,91 @@ a {
   border-radius: 5px;
 }
 
+#home_header {
+  height: 100vh;
+  background: linear-gradient(rgba(109, 53, 142, 0.6), rgba(109, 53, 142, 0.6)), url("/images/hero_image.jpg") center/cover no-repeat;
+}
+#home_header h1 {
+  font-size: 3.9rem;
+  max-width: 55%;
+  color: white;
+  padding: 1.5rem 0;
+}
+#home_header .logo {
+  max-width: 10%;
+}
+#home_header .nav {
+  background: #22112c;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home_header .nav .navigation {
+  display: flex;
+  align-items: center;
+}
+#home_header .nav .navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home_header .nav .navigation ul li {
+  border-bottom: 2px solid #58ACDD;
+  padding-bottom: 0.3rem;
+}
+#home_header .nav a {
+  color: white;
+}
+#home_header .nav li {
+  margin-left: 1.5rem;
+  font-size: 20px;
+}
+#home_header .nav .flyout_menu {
+  display: none;
+}
+#home_header .nav > div {
+  display: flex;
+}
+#home_header .nav .nav_button {
+  background-color: #58ACDD;
+  display: inline-block;
+  padding: 0.9rem;
+  color: white;
+  border-radius: 5px;
+  margin-left: 1.5rem;
+}
+#home_header .nav .nav_button a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#home_header .burger_menu {
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+  display: none;
+}
+#home_header .burger_menu span {
+  background-color: #58ACDD;
+  display: block;
+  padding: 0.2rem 0;
+  margin: 0.2rem 0;
+  width: 30px;
+  border-radius: 3px;
+}
+#home_header .mission {
+  display: flex;
+  color: white;
+  gap: 10px;
+}
+#home_header .mission div {
+  padding: 2rem;
+  background: rgba(97, 192, 241, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+}
+
 #about_us .flex {
   display: flex;
   align-items: center;
@@ -181,6 +267,24 @@ a {
 }
 #suporters .companies ion-icon {
   font-size: 50px;
+}
+
+#projects .project_box_wrap {
+  display: flex;
+  gap: 10px;
+  color: rgb(215, 214, 214);
+}
+#projects .project_box_wrap .project_box {
+  background: linear-gradient(rgba(109, 53, 142, 0.6), rgba(109, 53, 142, 0.6)), url("/images/hero_image.jpg") center/cover no-repeat;
+  padding: 2rem;
+  border-radius: 5px;
+}
+#projects .project_box_wrap .project_box a {
+  background: #58ACDD;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
 }
 
 #achievements .achievement_box {
@@ -263,9 +367,13 @@ a {
   background-color: #58ACDD;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(215, 214, 214);
 }
 #frequently_asked_questions .question_box .answer, #frequently_asked_questions .question_box .question {
   padding: 1rem;
+}
+#frequently_asked_questions .question_box .answer {
+  display: none;
 }
 
 #call_to_action .call_to_action_wrap {
@@ -297,4 +405,39 @@ a {
 }
 #call_to_action .call_to_action_wrap .call_to_action_buttons a:last-child {
   border: 2px solid #58ACDD;
+}
+
+#footer {
+  background-color: #22112c;
+  padding: 2rem 0;
+  color: white;
+}
+#footer ion-icon {
+  font-size: 30px;
+}
+#footer a {
+  color: white;
+}
+#footer img {
+  max-width: 20%;
+}
+#footer .footer_wrap_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+}
+#footer .socials {
+  display: flex;
+  gap: 20px;
+  margin: 1rem 0;
+}
+#footer .footer_box {
+  flex: 1;
+  justify-self: right;
+}
+#footer .copy {
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
 }

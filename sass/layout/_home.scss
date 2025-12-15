@@ -1,6 +1,111 @@
 
-#about_us {
+#home_header {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(109, 53, 142, 0.6), rgba(109, 53, 142, 0.6)),
+        url('/images/hero_image.jpg') center/cover no-repeat;
 
+    h1 {
+        font-size: 3.9rem;
+        max-width: 55%;
+        color: white;
+        padding: 1.5rem 0;
+    }
+
+    .logo {
+        max-width: 10%;
+    }
+
+    .nav {
+        background: #22112c;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .navigation {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    border-bottom: 2px solid #58ACDD;
+                    padding-bottom: 0.3rem;
+                }
+            }
+        }
+
+        a {
+            color: white;
+        }
+
+        li {
+            margin-left: 1.5rem;
+            font-size: 20px;
+        }
+
+        .flyout_menu {
+            display: none;
+        }
+
+        > div {
+            display: flex;
+        }
+
+        .nav_button {
+            background-color: #58ACDD;
+            display: inline-block;
+            padding: 0.9rem;
+            color: white;
+            border-radius: 5px;
+            margin-left: 1.5rem;
+
+            a {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .burger_menu {
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin-left: 1rem;
+        display: none;
+
+        span {
+            background-color: #58ACDD;
+            display: block;
+            padding: 0.2rem 0;
+            margin: 0.2rem 0;
+            width: 30px;
+            border-radius: 3px
+        }
+    }
+
+    .mission {
+        display: flex;
+        color: white;
+        gap: 10px;
+
+        div {
+            padding: 2rem;
+            background: rgba(97, 192, 241, 0.5);
+            backdrop-filter: blur(2px);
+            border-radius: 5px;
+        }
+    }
+   
+}
+
+
+#about_us {
+    
     .flex {
         display: flex;
         align-items: center;
@@ -58,6 +163,32 @@
 
 }
 
+#projects {
+
+    .project_box_wrap {
+        display: flex;
+        gap: 10px;
+        color: rgb(215, 214, 214);
+
+        .project_box {
+            background:
+            linear-gradient(rgba(109, 53, 142, 0.6), rgba(109, 53, 142, 0.6)),
+            url('/images/hero_image.jpg') center/cover no-repeat;
+            padding: 2rem;
+            border-radius: 5px;
+
+            a {
+                background: #58ACDD;
+                padding: 1rem;
+                display: inline-block;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+    }
+
+}
+
 #achievements {
 
     .achievement_box {
@@ -79,7 +210,7 @@
         }
     }
 
-    #achievements {
+#achievements {
         padding: 80px 0;
         background: #ffffff;
     }
@@ -152,6 +283,7 @@
 #frequently_asked_questions {
 
     .question_answer_wrap {
+
     }
 
     .question_box {
@@ -162,10 +294,15 @@
             background-color: #58ACDD;
             display: flex;
             justify-content: space-between;
+            border-bottom: 1px solid rgb(215, 214, 214);
         }
 
         .answer, .question {
             padding: 1rem;
+        }
+
+        .answer {
+            display: none;
         }
     }
 
@@ -200,7 +337,6 @@
             border-radius: 5px;
             text-align: center;
         }
-
 
         .call_to_action_buttons {
             text-align: center;
