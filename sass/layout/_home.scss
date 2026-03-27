@@ -12,12 +12,17 @@
         padding: 1.5rem 0;
     }
 
+    p {
+        padding: 3rem;
+        margin: 1rem;
+        
+    }
+
     .logo {
         max-width: 10%;
     }
 
     .nav {
-        background: #22112c;
         padding: 1rem 0;
         display: flex;
         align-items: center;
@@ -103,14 +108,25 @@
    
 }
 
-
 #about_us {
-    
+
+    .container {
+        padding: 4rem 1rem;
+    }
+
     .flex {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 50px;
+
+        h1 {
+            margin-top: 1rem 0;
+        }
+
+        p, h1{
+            margin-bottom: 1rem;
+        }
 
         div {
             flex: 1;
@@ -165,6 +181,10 @@
 
 #projects {
 
+    .container {
+        padding: 4rem 1rem;
+    }
+
     .project_box_wrap {
         display: flex;
         gap: 10px;
@@ -191,6 +211,10 @@
 
 #achievements {
 
+        .container {
+        padding: 4rem 1rem;
+    }
+
     .achievement_box {
 
         display: flex;
@@ -211,6 +235,7 @@
     }
 
 #achievements {
+
         padding: 80px 0;
         background: #ffffff;
     }
@@ -282,6 +307,10 @@
 
 #frequently_asked_questions {
 
+        .container {
+        padding: 4rem 1rem;
+    }
+
     .question_answer_wrap {
 
     }
@@ -309,6 +338,10 @@
 }
 
 #call_to_action {
+
+        .container {
+        padding: 4rem 1rem;
+    }
 
     .call_to_action_wrap {
         height: 400px;
