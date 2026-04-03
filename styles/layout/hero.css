@@ -2,7 +2,7 @@
 /* ── PAGE HERO BANNER (for inner pages) ─────────────────────── */
 .page-banner {
   min-height: 40vh;
-  background: linear-gradient(150deg, var(--dark) 0%, var(--navy) 55%, #153A7A 100%);
+  background: linear-gradient(150deg, #060D1A 0%, #0D2B5E 55%, #153A7A 100%);
   display: flex;
   align-items: flex-end;
   padding: 7rem 5vw 3.5rem;
@@ -67,7 +67,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: var(--sky);
+  color: #4A90D9;
   margin-bottom: 0.6rem;
   display: flex;
   align-items: center;
@@ -78,19 +78,19 @@
   content: "";
   width: 18px;
   height: 1px;
-  background: var(--sky);
+  background: #4A90D9;
 }
 
 .page-banner h1 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
   line-height: 1.1;
 }
 
 .page-banner h1 em {
-  color: var(--sky);
+  color: #4A90D9;
   font-style: normal;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .pb-breadcrumb a:hover {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .pb-breadcrumb span {
@@ -132,7 +132,7 @@
 /* ── MAIN HERO (index only) ──────────────────────────────────── */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(150deg, var(--dark) 0%, var(--navy) 55%, #153A7A 100%);
+  background: linear-gradient(150deg, #060D1A 0%, #0D2B5E 55%, #153A7A 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -190,7 +190,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--sky);
+  color: #4A90D9;
   animation: fadeUp 0.6s ease both;
 }
 
@@ -198,7 +198,7 @@
   content: "";
   width: 18px;
   height: 1px;
-  background: var(--sky);
+  background: #4A90D9;
 }
 
 h1 {
@@ -206,14 +206,14 @@ h1 {
   font-size: clamp(2.8rem, 5.5vw, 5rem);
   font-weight: 900;
   line-height: 1.07;
-  color: var(--white);
+  color: #FFFFFF;
   letter-spacing: -0.5px;
   animation: fadeUp 0.7s 0.1s ease both;
 }
 
 h1 .stroke {
   color: transparent;
-  -webkit-text-stroke: 2px var(--sky);
+  -webkit-text-stroke: 2px #4A90D9;
 }
 
 .hero-sub {
@@ -252,7 +252,7 @@ h1 .stroke {
 }
 
 .stat-num span {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .stat-label {
@@ -313,7 +313,7 @@ h1 .stroke {
 
 .chip-blue {
   background: rgba(74, 144, 217, 0.2);
-  color: var(--sky);
+  color: #4A90D9;
   border: 1px solid rgba(74, 144, 217, 0.3);
 }
 

@@ -1,5 +1,7 @@
+
+@use '../variables' as v;
 footer {
-  background: var(--dark);
+  background: v.$dark;
   color: rgba(255, 255, 255, .5);
   padding: 4rem 5vw 2rem;
 }
@@ -28,7 +30,7 @@ footer {
   height: 40px;
   object-fit: contain;
   border-radius: 8px;
-  background: white;
+  background: v.$white;
   padding: 3px;
 }
 
@@ -36,7 +38,7 @@ footer {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   font-weight: 900;
-  color: var(--white);
+  color: v.$white;
 }
 
 .footer-brand p {
@@ -46,7 +48,7 @@ footer {
 }
 
 .footer-col h5 {
-  color: var(--white);
+  color: v.$white;
   font-size: .78rem;
   font-weight: 700;
   letter-spacing: 1.5px;

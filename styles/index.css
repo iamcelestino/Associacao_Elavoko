@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background: var(--offwhite);
-  color: var(--text);
+  background: #F4F8FF;
+  color: #1E293B;
   overflow-x: hidden;
 }
 
@@ -39,7 +39,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: var(--sky);
+  color: #4A90D9;
   margin-bottom: 0.7rem;
 }
 
@@ -48,11 +48,11 @@ h2 {
   font-size: clamp(2rem, 3.8vw, 3.2rem);
   font-weight: 900;
   line-height: 1.15;
-  color: var(--navy);
+  color: #0D2B5E;
 }
 
 .sec-sub {
-  color: var(--slate);
+  color: #64748B;
   font-size: 1rem;
   line-height: 1.8;
   max-width: 520px;
@@ -192,7 +192,7 @@ nav.scrolled {
   height: 44px;
   object-fit: contain;
   border-radius: 8px;
-  background: white;
+  background: #FFFFFF;
   padding: 3px;
 }
 
@@ -200,7 +200,7 @@ nav.scrolled {
   font-family: "Playfair Display", serif;
   font-size: 1.25rem;
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
   letter-spacing: -0.3px;
   line-height: 1.1;
 }
@@ -235,18 +235,18 @@ nav.scrolled {
 }
 
 .nav-links a:hover {
-  color: var(--white);
+  color: #FFFFFF;
   background: rgba(255, 255, 255, 0.07);
 }
 
 .nav-links a.active-page {
-  color: var(--white);
+  color: #FFFFFF;
   background: rgba(74, 144, 217, 0.2);
 }
 
 .nav-cta {
-  background: linear-gradient(135deg, var(--pink), var(--magenta)) !important;
-  color: var(--white) !important;
+  background: linear-gradient(135deg, #E91E8C, #CC1E7A) !important;
+  color: #FFFFFF !important;
   margin-left: 0.6rem;
   padding: 0.5rem 1.2rem !important;
   border-radius: 6px;
@@ -257,7 +257,7 @@ nav.scrolled {
 .nav-cta:hover {
   opacity: 0.9;
   transform: translateY(-1px);
-  background: linear-gradient(135deg, var(--pink), var(--magenta)) !important;
+  background: linear-gradient(135deg, #E91E8C, #CC1E7A) !important;
 }
 
 .hamburger {
@@ -274,7 +274,7 @@ nav.scrolled {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--white);
+  background: #FFFFFF;
   transition: 0.3s;
 }
 
@@ -293,7 +293,7 @@ nav.scrolled {
 /* ── PAGE HERO BANNER (for inner pages) ─────────────────────── */
 .page-banner {
   min-height: 40vh;
-  background: linear-gradient(150deg, var(--dark) 0%, var(--navy) 55%, #153A7A 100%);
+  background: linear-gradient(150deg, #060D1A 0%, #0D2B5E 55%, #153A7A 100%);
   display: flex;
   align-items: flex-end;
   padding: 7rem 5vw 3.5rem;
@@ -358,7 +358,7 @@ nav.scrolled {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: var(--sky);
+  color: #4A90D9;
   margin-bottom: 0.6rem;
   display: flex;
   align-items: center;
@@ -369,19 +369,19 @@ nav.scrolled {
   content: "";
   width: 18px;
   height: 1px;
-  background: var(--sky);
+  background: #4A90D9;
 }
 
 .page-banner h1 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
   line-height: 1.1;
 }
 
 .page-banner h1 em {
-  color: var(--sky);
+  color: #4A90D9;
   font-style: normal;
 }
 
@@ -409,7 +409,7 @@ nav.scrolled {
 }
 
 .pb-breadcrumb a:hover {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .pb-breadcrumb span {
@@ -423,7 +423,7 @@ nav.scrolled {
 /* ── MAIN HERO (index only) ──────────────────────────────────── */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(150deg, var(--dark) 0%, var(--navy) 55%, #153A7A 100%);
+  background: linear-gradient(150deg, #060D1A 0%, #0D2B5E 55%, #153A7A 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -481,7 +481,7 @@ nav.scrolled {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--sky);
+  color: #4A90D9;
   animation: fadeUp 0.6s ease both;
 }
 
@@ -489,7 +489,7 @@ nav.scrolled {
   content: "";
   width: 18px;
   height: 1px;
-  background: var(--sky);
+  background: #4A90D9;
 }
 
 h1 {
@@ -497,14 +497,14 @@ h1 {
   font-size: clamp(2.8rem, 5.5vw, 5rem);
   font-weight: 900;
   line-height: 1.07;
-  color: var(--white);
+  color: #FFFFFF;
   letter-spacing: -0.5px;
   animation: fadeUp 0.7s 0.1s ease both;
 }
 
 h1 .stroke {
   color: transparent;
-  -webkit-text-stroke: 2px var(--sky);
+  -webkit-text-stroke: 2px #4A90D9;
 }
 
 .hero-sub {
@@ -543,7 +543,7 @@ h1 .stroke {
 }
 
 .stat-num span {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .stat-label {
@@ -604,7 +604,7 @@ h1 .stroke {
 
 .chip-blue {
   background: rgba(74, 144, 217, 0.2);
-  color: var(--sky);
+  color: #4A90D9;
   border: 1px solid rgba(74, 144, 217, 0.3);
 }
 
@@ -628,7 +628,7 @@ h1 .stroke {
 
 /* ── ABOUT ───────────────────────────────────────────────────── */
 #about {
-  background: var(--white);
+  background: #FFFFFF;
 }
 
 .about-grid {
@@ -640,7 +640,7 @@ h1 .stroke {
 }
 
 .about-logo-card {
-  background: linear-gradient(145deg, var(--navy), var(--blue));
+  background: linear-gradient(145deg, #0D2B5E, #1A50A0);
   border-radius: 24px;
   padding: 3rem 2.5rem;
   display: flex;
@@ -688,7 +688,7 @@ h1 .stroke {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
   margin-top: 1.5rem;
   /* text-align: center; */
   position: relative;
@@ -727,7 +727,7 @@ h1 .stroke {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
   display: block;
 }
 
@@ -754,7 +754,7 @@ h1 .stroke {
 }
 
 .about-text p {
-  color: var(--slate);
+  color: #64748B;
   line-height: 1.85;
   font-size: 0.95rem;
   margin-bottom: 1.1rem;
@@ -762,10 +762,10 @@ h1 .stroke {
 }
 
 .mission-box {
-  background: var(--offwhite);
+  background: #F4F8FF;
   border-radius: 14px;
   padding: 1.5rem;
-  border-left: 4px solid var(--sky);
+  border-left: 4px solid #4A90D9;
   margin: 1.5rem 0;
 }
 
@@ -774,13 +774,13 @@ h1 .stroke {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--sky);
+  color: #4A90D9;
   margin-bottom: 0.5rem;
 }
 
 .mission-box p {
   font-size: 0.9rem;
-  color: var(--slate);
+  color: #64748B;
   line-height: 1.7;
   font-style: italic;
   margin: 0;
@@ -794,7 +794,7 @@ h1 .stroke {
 }
 
 .valor {
-  background: var(--offwhite);
+  background: #F4F8FF;
   border-radius: 10px;
   padding: 1rem;
   display: flex;
@@ -810,12 +810,12 @@ h1 .stroke {
 .valor h5 {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--navy);
+  color: #0D2B5E;
 }
 
 .valor p {
   font-size: 0.75rem;
-  color: var(--slate);
+  color: #64748B;
   margin-top: 0.2rem;
   line-height: 1.5;
   font-weight: 300;
@@ -823,7 +823,7 @@ h1 .stroke {
 
 /* ── PROGRAMS ────────────────────────────────────────────────── */
 #programs {
-  background: var(--offwhite);
+  background: #F4F8FF;
 }
 
 .prog-header {
@@ -842,7 +842,7 @@ h1 .stroke {
 }
 
 .prog-card {
-  background: var(--white);
+  background: #FFFFFF;
   border-radius: 16px;
   border: 1px solid rgba(13, 43, 94, 0.07);
   overflow: hidden;
@@ -855,7 +855,7 @@ h1 .stroke {
 }
 
 .prog-card.feat {
-  background: linear-gradient(160deg, var(--navy), var(--blue));
+  background: linear-gradient(160deg, #0D2B5E, #1A50A0);
   border: none;
 }
 
@@ -864,12 +864,12 @@ h1 .stroke {
 }
 
 .prog-card.feat h3 {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 .prog-card.feat .prog-chip {
   background: rgba(255, 255, 255, 0.12);
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .prog-card.feat .prog-footer {
@@ -885,23 +885,23 @@ h1 .stroke {
 }
 
 .bar-blue {
-  background: linear-gradient(90deg, var(--sky), #93C5FD);
+  background: linear-gradient(90deg, #4A90D9, #93C5FD);
 }
 
 .bar-pink {
-  background: linear-gradient(90deg, var(--pink), #F472B6);
+  background: linear-gradient(90deg, #E91E8C, #F472B6);
 }
 
 .bar-orange {
-  background: linear-gradient(90deg, var(--orange), #FCA86A);
+  background: linear-gradient(90deg, #F07020, #FCA86A);
 }
 
 .bar-purple {
-  background: linear-gradient(90deg, var(--purple), #C084FC);
+  background: linear-gradient(90deg, #8B2FC9, #C084FC);
 }
 
 .bar-magenta {
-  background: linear-gradient(90deg, var(--magenta), var(--pink));
+  background: linear-gradient(90deg, #CC1E7A, #E91E8C);
 }
 
 .bar-gold {
@@ -919,8 +919,8 @@ h1 .stroke {
 
 .prog-chip {
   display: inline-block;
-  background: var(--light);
-  color: var(--blue);
+  background: #E8F2FF;
+  color: #1A50A0;
   font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -934,12 +934,12 @@ h1 .stroke {
   font-family: "Playfair Display", serif;
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--navy);
+  color: #0D2B5E;
   margin-bottom: 0.5rem;
 }
 
 .prog-body {
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.85rem;
   line-height: 1.65;
   font-weight: 300;
@@ -955,7 +955,7 @@ h1 .stroke {
 
 .prog-meta {
   font-size: 0.75rem;
-  color: var(--slate);
+  color: #64748B;
 }
 
 .prog-arr {
@@ -966,21 +966,21 @@ h1 .stroke {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue);
+  color: #1A50A0;
   font-size: 0.85rem;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
   cursor: default;
 }
 
 .prog-arr:hover {
-  background: var(--blue);
-  border-color: var(--blue);
+  background: #1A50A0;
+  border-color: #1A50A0;
   color: white;
 }
 
 /* ── PROGRAMS ────────────────────────────────────────────────── */
 #programs {
-  background: var(--offwhite);
+  background: #F4F8FF;
 }
 
 .prog-header {
@@ -999,7 +999,7 @@ h1 .stroke {
 }
 
 .prog-card {
-  background: var(--white);
+  background: #FFFFFF;
   border-radius: 16px;
   border: 1px solid rgba(13, 43, 94, 0.07);
   overflow: hidden;
@@ -1012,7 +1012,7 @@ h1 .stroke {
 }
 
 .prog-card.feat {
-  background: linear-gradient(160deg, var(--navy), var(--blue));
+  background: linear-gradient(160deg, #0D2B5E, #1A50A0);
   border: none;
 }
 
@@ -1021,12 +1021,12 @@ h1 .stroke {
 }
 
 .prog-card.feat h3 {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 .prog-card.feat .prog-chip {
   background: rgba(255, 255, 255, 0.12);
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .prog-card.feat .prog-footer {
@@ -1042,23 +1042,23 @@ h1 .stroke {
 }
 
 .bar-blue {
-  background: linear-gradient(90deg, var(--sky), #93C5FD);
+  background: linear-gradient(90deg, #4A90D9, #93C5FD);
 }
 
 .bar-pink {
-  background: linear-gradient(90deg, var(--pink), #F472B6);
+  background: linear-gradient(90deg, #E91E8C, #F472B6);
 }
 
 .bar-orange {
-  background: linear-gradient(90deg, var(--orange), #FCA86A);
+  background: linear-gradient(90deg, #F07020, #FCA86A);
 }
 
 .bar-purple {
-  background: linear-gradient(90deg, var(--purple), #C084FC);
+  background: linear-gradient(90deg, #8B2FC9, #C084FC);
 }
 
 .bar-magenta {
-  background: linear-gradient(90deg, var(--magenta), var(--pink));
+  background: linear-gradient(90deg, #CC1E7A, #E91E8C);
 }
 
 .bar-gold {
@@ -1076,8 +1076,8 @@ h1 .stroke {
 
 .prog-chip {
   display: inline-block;
-  background: var(--light);
-  color: var(--blue);
+  background: #E8F2FF;
+  color: #1A50A0;
   font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1091,12 +1091,12 @@ h1 .stroke {
   font-family: "Playfair Display", serif;
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--navy);
+  color: #0D2B5E;
   margin-bottom: 0.5rem;
 }
 
 .prog-body {
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.85rem;
   line-height: 1.65;
   font-weight: 300;
@@ -1112,7 +1112,7 @@ h1 .stroke {
 
 .prog-meta {
   font-size: 0.75rem;
-  color: var(--slate);
+  color: #64748B;
 }
 
 .prog-arr {
@@ -1123,30 +1123,30 @@ h1 .stroke {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue);
+  color: #1A50A0;
   font-size: 0.85rem;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
   cursor: default;
 }
 
 .prog-arr:hover {
-  background: var(--blue);
-  border-color: var(--blue);
+  background: #1A50A0;
+  border-color: #1A50A0;
   color: white;
 }
 
 /* ── GALLERY ─────────────────────────────────────────────────── */
 #gallery {
-  background: var(--dark);
+  background: #060D1A;
   overflow: hidden;
 }
 
 #gallery .sec-label {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 #gallery h2 {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 #gallery .sec-sub {
@@ -1184,8 +1184,8 @@ h1 .stroke {
 
 .gf-btn.active,
 .gf-btn:hover {
-  background: var(--sky);
-  border-color: var(--sky);
+  background: #4A90D9;
+  border-color: #4A90D9;
   color: white;
 }
 
@@ -1282,8 +1282,8 @@ h1 .stroke {
 }
 
 .slider-btn:hover {
-  background: var(--sky);
-  border-color: var(--sky);
+  background: #4A90D9;
+  border-color: #4A90D9;
 }
 
 .slider-btn.prev {
@@ -1311,7 +1311,7 @@ h1 .stroke {
 }
 
 .s-dot.active {
-  background: var(--sky);
+  background: #4A90D9;
   width: 24px;
   border-radius: 4px;
 }
@@ -1338,7 +1338,7 @@ h1 .stroke {
 }
 
 .g-thumb.active {
-  border-color: var(--sky);
+  border-color: #4A90D9;
   transform: scale(1.04);
 }
 
@@ -1405,7 +1405,7 @@ h1 .stroke {
 
 /* ── TEAM ─────────────────────────────────────────────────────── */
 #team {
-  background: var(--white);
+  background: #FFFFFF;
 }
 
 .team-grid {
@@ -1442,7 +1442,7 @@ h1 .stroke {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: var(--white);
+  background: #FFFFFF;
   border: 3px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 4px 20px rgba(13, 43, 94, 0.15);
   display: flex;
@@ -1461,7 +1461,7 @@ h1 .stroke {
   font-family: "Playfair Display", serif;
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--navy);
+  color: #0D2B5E;
 }
 
 .team-role {
@@ -1476,7 +1476,7 @@ h1 .stroke {
 }
 
 .team-body p {
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.8rem;
   line-height: 1.6;
   font-weight: 300;
@@ -1497,21 +1497,21 @@ h1 .stroke {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.75rem;
   text-decoration: none;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .tsoc:hover {
-  background: var(--navy);
+  background: #0D2B5E;
   color: white;
-  border-color: var(--navy);
+  border-color: #0D2B5E;
 }
 
 /* ── AWARDS ─────────────────────────────────────────────────── */
 #awards {
-  background: linear-gradient(150deg, var(--dark) 0%, #0A1F45 100%);
+  background: linear-gradient(150deg, #060D1A 0%, #0A1F45 100%);
   overflow: hidden;
   position: relative;
 }
@@ -1529,11 +1529,11 @@ h1 .stroke {
 }
 
 #awards .sec-label {
-  color: var(--gold);
+  color: #F5A623;
 }
 
 #awards h2 {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 #awards .sec-sub {
@@ -1569,7 +1569,7 @@ h1 .stroke {
 .aw-year {
   display: inline-block;
   background: rgba(245, 166, 35, 0.2);
-  color: var(--gold);
+  color: #F5A623;
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1620,7 +1620,7 @@ h1 .stroke {
 }
 
 .aw-org strong {
-  color: var(--gold);
+  color: #F5A623;
   font-size: 0.85rem;
   display: block;
 }
@@ -1681,7 +1681,7 @@ h1 .stroke {
 .award-item h4 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: white;
+  color: #FFFFFF;
   margin-bottom: 0.2rem;
 }
 
@@ -2119,7 +2119,7 @@ h1 .stroke {
 }
 
 footer {
-  background: var(--dark);
+  background: #060D1A;
   color: rgba(255, 255, 255, 0.5);
   padding: 4rem 5vw 2rem;
 }
@@ -2148,7 +2148,7 @@ footer {
   height: 40px;
   object-fit: contain;
   border-radius: 8px;
-  background: white;
+  background: #FFFFFF;
   padding: 3px;
 }
 
@@ -2156,7 +2156,7 @@ footer {
   font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   font-weight: 900;
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 .footer-brand p {
@@ -2166,7 +2166,7 @@ footer {
 }
 
 .footer-col h5 {
-  color: var(--white);
+  color: #FFFFFF;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 1.5px;

@@ -13,8 +13,8 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background: var(--offwhite);
-  color: var(--text);
+  background: v.$offwhite;
+  color: v.$text;
   overflow-x: hidden;
 }
 
@@ -26,6 +26,83 @@ body::before {
   pointer-events: none;
   background-image: radial-gradient(circle, rgba(74, 144, 217, .06) 1px, transparent 1px);
   background-size: 32px 32px;
+}
+
+
+/* ── BUTTONS ─────────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--pink), var(--magenta));
+  color: v.$white;
+  padding: .9rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: .95rem;
+  box-shadow: 0 8px 28px rgba(233, 30, 140, .35);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(233, 30, 140, .45);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: v.$white;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: .95rem;
+  padding: .9rem 1.8rem;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 6px;
+  transition: border-color .2s, background .2s;
+}
+
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .05);
+}
+
+.btn-blue {
+  padding: .9rem 2.2rem;
+  background: v.$navy;
+  color: v.$white;
+  border: none;
+  border-radius: 8px;
+  font-size: .95rem;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+
+.btn-blue:hover {
+  background: v.$blue;
+  transform: translateY(-2px);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: .9rem;
+  background: linear-gradient(135deg, var(--pink), var(--magenta));
+  color: v.$white;
+  border: none;
+  border-radius: 8px;
+  font-size: .95rem;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 22px rgba(233, 30, 140, .3);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(233, 30, 140, .4);
 }
 
 /* ── SECTION COMMONS ─────────────────────────────────────────── */
@@ -40,7 +117,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: var(--sky);
+  color: v.$sky;
   margin-bottom: .7rem;
 }
 
@@ -49,11 +126,11 @@ h2 {
   font-size: clamp(2rem, 3.8vw, 3.2rem);
   font-weight: 900;
   line-height: 1.15;
-  color: var(--navy);
+  color: v.$navy;
 }
 
 .sec-sub {
-  color: var(--slate);
+  color: v.$slate;
   font-size: 1rem;
   line-height: 1.8;
   max-width: 520px;

@@ -1,3 +1,4 @@
+@use '../variables' as v;
 nav {
   position: fixed;
   top: 0;
@@ -30,7 +31,7 @@ nav.scrolled {
   height: 44px;
   object-fit: contain;
   border-radius: 8px;
-  background: white;
+  background: v.$white;
   padding: 3px;
 }
 
@@ -38,7 +39,7 @@ nav.scrolled {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
   font-weight: 900;
-  color: var(--white);
+  color: v.$white;
   letter-spacing: -.3px;
   line-height: 1.1;
 }
@@ -73,18 +74,18 @@ nav.scrolled {
 }
 
 .nav-links a:hover {
-  color: var(--white);
+  color: v.$white;
   background: rgba(255, 255, 255, .07);
 }
 
 .nav-links a.active-page {
-  color: var(--white);
+  color: v.$white;
   background: rgba(74, 144, 217, .2);
 }
 
 .nav-cta {
-  background: linear-gradient(135deg, var(--pink), var(--magenta)) !important;
-  color: var(--white) !important;
+  background: linear-gradient(135deg, v.$pink, v.$magenta) !important;
+  color: v.$white !important;
   margin-left: .6rem;
   padding: .5rem 1.2rem !important;
   border-radius: 6px;
@@ -95,7 +96,7 @@ nav.scrolled {
 .nav-cta:hover {
   opacity: .9;
   transform: translateY(-1px);
-  background: linear-gradient(135deg, var(--pink), var(--magenta)) !important;
+  background: linear-gradient(135deg, v.$pink, v.$magenta) !important;
 }
 
 .hamburger {
@@ -112,7 +113,7 @@ nav.scrolled {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--white);
+  background: v.$white;
   transition: .3s;
 }
 

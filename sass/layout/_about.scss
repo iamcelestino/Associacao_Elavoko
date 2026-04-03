@@ -1,16 +1,17 @@
+@use '../variables' as v;
 
 /* ── GALLERY ─────────────────────────────────────────────────── */
 #gallery {
-  background: var(--dark);
+  background: v.$dark;
   overflow: hidden;
 }
 
 #gallery .sec-label {
-  color: var(--sky);
+  color: v.$sky;
 }
 
 #gallery h2 {
-  color: var(--white);
+  color: v.$white;
 }
 
 #gallery .sec-sub {
@@ -48,8 +49,8 @@
 
 .gf-btn.active,
 .gf-btn:hover {
-  background: var(--sky);
-  border-color: var(--sky);
+  background: v.$sky;
+  border-color: v.$sky;
   color: white;
 }
 
@@ -146,8 +147,8 @@
 }
 
 .slider-btn:hover {
-  background: var(--sky);
-  border-color: var(--sky);
+  background: v.$sky;
+  border-color: v.$sky;
 }
 
 .slider-btn.prev {
@@ -175,7 +176,7 @@
 }
 
 .s-dot.active {
-  background: var(--sky);
+  background: v.$sky;
   width: 24px;
   border-radius: 4px;
 }
@@ -202,7 +203,7 @@
 }
 
 .g-thumb.active {
-  border-color: var(--sky);
+  border-color: v.$sky;
   transform: scale(1.04);
 }
 
@@ -244,7 +245,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--pink);
+  background: ;
   border: none;
   color: white;
   font-size: 1.1rem;
@@ -270,7 +271,7 @@
 
 /* ── TEAM ─────────────────────────────────────────────────────── */
 #team {
-  background: var(--white);
+  background: v.$white;
 }
 
 .team-grid {
@@ -307,7 +308,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: var(--white);
+  background: v.$white;
   border: 3px solid rgba(255, 255, 255, .4);
   box-shadow: 0 4px 20px rgba(13, 43, 94, .15);
   display: flex;
@@ -326,7 +327,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--navy);
+  color: v.$navy;
 }
 
 .team-role {
@@ -341,7 +342,7 @@
 }
 
 .team-body p {
-  color: var(--slate);
+  color: v.$slate;
   font-size: .8rem;
   line-height: 1.6;
   font-weight: 300;
@@ -362,23 +363,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--slate);
+  color: v.$slate;
   font-size: .75rem;
   text-decoration: none;
   transition: background .2s, color .2s, border-color .2s;
 }
 
 .tsoc:hover {
-  background: var(--navy);
+  background: v.$navy;
   color: white;
-  border-color: var(--navy);
+  border-color: v.$navy;
 }
 
 
 
 /* ── AWARDS ─────────────────────────────────────────────────── */
 #awards {
-  background: linear-gradient(150deg, var(--dark) 0%, #0A1F45 100%);
+  background: linear-gradient(150deg, v.$dark 0%, #0A1F45 100%);
   overflow: hidden;
   position: relative;
 }
@@ -396,11 +397,11 @@
 }
 
 #awards .sec-label {
-  color: var(--gold);
+  color: v.$gold;
 }
 
 #awards h2 {
-  color: var(--white);
+  color: v.$white;
 }
 
 #awards .sec-sub {
@@ -436,7 +437,7 @@
 .aw-year {
   display: inline-block;
   background: rgba(245, 166, 35, .2);
-  color: var(--gold);
+  color: v.$gold;
   font-size: .72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -487,7 +488,7 @@
 }
 
 .aw-org strong {
-  color: var(--gold);
+  color: v.$gold;
   font-size: .85rem;
   display: block;
 }
