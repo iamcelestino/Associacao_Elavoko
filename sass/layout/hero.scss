@@ -1,0 +1,337 @@
+
+
+/* ── PAGE HERO BANNER (for inner pages) ─────────────────────── */
+.page-banner {
+  min-height: 40vh;
+  background: linear-gradient(150deg, var(--dark) 0%, var(--navy) 55%, #153A7A 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 7rem 5vw 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-banner::before {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(74, 144, 217, .08);
+  pointer-events: none;
+}
+
+.page-banner::after {
+  content: '';
+  position: absolute;
+  right: 50px;
+  top: -50px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 1px solid rgba(233, 30, 140, .06);
+  pointer-events: none;
+}
+
+.pb-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.pb-orb1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(74, 144, 217, .1);
+  top: -100px;
+  right: 0;
+}
+
+.pb-orb2 {
+  width: 200px;
+  height: 200px;
+  background: rgba(233, 30, 140, .07);
+  bottom: 0;
+  right: 30%;
+}
+
+.page-banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.pb-label {
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--sky);
+  margin-bottom: .6rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.pb-label::before {
+  content: '';
+  width: 18px;
+  height: 1px;
+  background: var(--sky);
+}
+
+.page-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.page-banner h1 em {
+  color: var(--sky);
+  font-style: normal;
+}
+
+.page-banner p {
+  color: rgba(255, 255, 255, .6);
+  font-size: 1rem;
+  margin-top: .8rem;
+  max-width: 520px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.pb-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  font-size: .78rem;
+}
+
+.pb-breadcrumb a {
+  color: rgba(255, 255, 255, .45);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.pb-breadcrumb a:hover {
+  color: var(--sky);
+}
+
+.pb-breadcrumb span {
+  color: rgba(255, 255, 255, .25);
+}
+
+.pb-breadcrumb strong {
+  color: rgba(255, 255, 255, .7);
+}
+
+/* ── MAIN HERO (index only) ──────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(150deg, var(--dark) 0%, var(--navy) 55%, #153A7A 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 8rem 5vw 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.orb1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(74, 144, 217, .12);
+  top: -100px;
+  right: -100px;
+}
+
+.orb2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(233, 30, 140, .08);
+  bottom: 50px;
+  right: 30%;
+}
+
+.orb3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(139, 47, 201, .1);
+  top: 30%;
+  left: -50px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  border: 1px solid rgba(74, 144, 217, .35);
+  border-radius: 4px;
+  padding: .4rem 1rem;
+  margin-bottom: 2rem;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sky);
+  animation: fadeUp .6s ease both;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 18px;
+  height: 1px;
+  background: var(--sky);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  font-weight: 900;
+  line-height: 1.07;
+  color: var(--white);
+  letter-spacing: -.5px;
+  animation: fadeUp .7s .1s ease both;
+}
+
+h1 .stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--sky);
+}
+
+.hero-sub {
+  margin-top: 1.6rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, .6);
+  max-width: 500px;
+  font-weight: 300;
+  animation: fadeUp .7s .2s ease both;
+}
+
+.hero-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeUp .7s .3s ease both;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  animation: fadeUp .7s .4s ease both;
+  flex-wrap: wrap;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--white);
+}
+
+.stat-num span {
+  color: var(--sky);
+}
+
+.stat-label {
+  font-size: .72rem;
+  color: rgba(255, 255, 255, .4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: .1rem;
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 1;
+  animation: fadeRight .8s .2s ease both;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(74, 144, 217, .2);
+  border-radius: 16px;
+  padding: 1.8rem;
+  backdrop-filter: blur(10px);
+}
+
+.hero-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: .6rem;
+}
+
+.hero-card p {
+  color: rgba(255, 255, 255, .55);
+  font-size: .88rem;
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.hero-chips {
+  display: flex;
+  gap: .7rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.chip {
+  padding: .35rem .9rem;
+  border-radius: 20px;
+  font-size: .72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.chip-blue {
+  background: rgba(74, 144, 217, .2);
+  color: var(--sky);
+  border: 1px solid rgba(74, 144, 217, .3);
+}
+
+.chip-pink {
+  background: rgba(233, 30, 140, .15);
+  color: #F472B6;
+  border: 1px solid rgba(233, 30, 140, .25);
+}
+
+.chip-orange {
+  background: rgba(240, 112, 32, .15);
+  color: #FB923C;
+  border: 1px solid rgba(240, 112, 32, .25);
+}
+
+.chip-purple {
+  background: rgba(139, 47, 201, .15);
+  color: #C084FC;
+  border: 1px solid rgba(139, 47, 201, .25);
+}

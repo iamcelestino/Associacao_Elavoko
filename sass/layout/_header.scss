@@ -1,102 +1,130 @@
-#header {
-
-
-    h1 {
-        font-size: 3.9rem;
-        max-width: 55%;
-        color: white;
-        padding: 1.5rem 0;
-    }
-
-    .logo {
-        max-width: 10%;
-    }
-
-    .nav {
-        background: #22112c;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        .navigation {
-            display: flex;
-            align-items: center;
-
-            ul {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                li {
-                    border-bottom: 2px solid #58ACDD;
-                    padding-bottom: 0.3rem;
-                }
-            }
-        }
-
-        a {
-            color: white;
-        }
-
-        li {
-            margin-left: 1.5rem;
-            font-size: 20px;
-        }
-
-        .flyout_menu {
-            display: none;
-        }
-
-        > div {
-            display: flex;
-        }
-
-        .nav_button {
-            background-color: #58ACDD;
-            display: inline-block;
-            padding: 0.9rem;
-            color: white;
-            border-radius: 5px;
-            margin-left: 1.5rem;
-
-            a {
-                color: white;
-                font-weight: bold;
-                font-size: 20px;
-            }
-        }
-    }
-    
-    .burger_menu {
-        padding: 0.5rem;
-        border-radius: 5px;
-        margin-left: 1rem;
-        display: none;
-
-        span {
-            background-color: #58ACDD;
-            display: block;
-            padding: 0.2rem 0;
-            margin: 0.2rem 0;
-            width: 30px;
-            border-radius: 3px
-        }
-    }
-
-    .mission {
-        display: flex;
-        color: white;
-        gap: 10px;
-
-        div {
-            padding: 2rem;
-            background: rgba(97, 192, 241, 0.5);
-            backdrop-filter: blur(2px);
-            border-radius: 5px;
-        }
-    }
-
-    
-   
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .9rem 5vw;
+  background: rgba(13, 43, 94, .97);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(74, 144, 217, .2);
+  transition: box-shadow .3s;
 }
+
+nav.scrolled {
+  box-shadow: 0 4px 40px rgba(0, 0, 0, .5);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 3px;
+}
+
+.nav-logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -.3px;
+  line-height: 1.1;
+}
+
+.nav-logo-text span {
+  display: block;
+  font-size: .62rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .65);
+  font-weight: 500;
+  font-size: .83rem;
+  letter-spacing: .2px;
+  padding: .5rem .9rem;
+  border-radius: 6px;
+  transition: color .2s, background .2s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, .07);
+}
+
+.nav-links a.active-page {
+  color: var(--white);
+  background: rgba(74, 144, 217, .2);
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, var(--pink), var(--magenta)) !important;
+  color: var(--white) !important;
+  margin-left: .6rem;
+  padding: .5rem 1.2rem !important;
+  border-radius: 6px;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 16px rgba(233, 30, 140, .3);
+}
+
+.nav-cta:hover {
+  opacity: .9;
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, var(--pink), var(--magenta)) !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: .3rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: .3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
