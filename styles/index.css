@@ -27,6 +27,82 @@ body::before {
   background-size: 32px 32px;
 }
 
+/* ── BUTTONS ─────────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--pink), var(--magenta));
+  color: #FFFFFF;
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 28px rgba(233, 30, 140, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(233, 30, 140, 0.45);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.9rem 1.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-blue {
+  padding: 0.9rem 2.2rem;
+  background: #0D2B5E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-blue:hover {
+  background: #1A50A0;
+  transform: translateY(-2px);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, var(--pink), var(--magenta));
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 22px rgba(233, 30, 140, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(233, 30, 140, 0.4);
+}
+
 /* ── SECTION COMMONS ─────────────────────────────────────────── */
 section {
   padding: 6rem 5vw;
@@ -821,6 +897,64 @@ h1 .stroke {
   font-weight: 300;
 }
 
+/* ── PAGE CTA BAND ───────────────────────────────────────────── */
+.cta-band {
+  background: linear-gradient(135deg, #0D2B5E, #1A50A0);
+  padding: 4rem 5vw;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-band::before {
+  content: "✦";
+  position: absolute;
+  font-size: 20rem;
+  color: rgba(255, 255, 255, 0.02);
+  top: -5rem;
+  right: -2rem;
+  pointer-events: none;
+}
+
+.cta-band h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.cta-band p {
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  font-weight: 300;
+}
+
+.cta-band-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-white {
+  background: white;
+  color: #0D2B5E;
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
 /* ── PROGRAMS ────────────────────────────────────────────────── */
 #programs {
   background: #F4F8FF;
@@ -1380,7 +1514,7 @@ h1 .stroke {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--pink);
+  background: #E91E8C;
   border: none;
   color: white;
   font-size: 1.1rem;
@@ -1558,7 +1692,7 @@ h1 .stroke {
 }
 
 .awards-featured::before {
-  content: "🏆";
+  content: "";
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
@@ -1681,7 +1815,7 @@ h1 .stroke {
 .award-item h4 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 0.2rem;
 }
 
