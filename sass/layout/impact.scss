@@ -1,7 +1,7 @@
 @use '../variables' as v;
 
 #impact {
-  background: var(--offwhite);
+  background: v.$offwhite;
 }
 
 .impact-grid {
@@ -12,7 +12,7 @@
 }
 
 .impact-card {
-  background: var(--white);
+  background: v.$white;
   border-radius: 16px;
   padding: 2rem;
   border: 1px solid rgba(13, 43, 94, .07);
@@ -34,11 +34,11 @@
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   font-weight: 900;
-  color: var(--navy);
+  color: v.$navy;
 }
 
 .impact-label {
-  color: var(--slate);
+  color: v.$slate;
   font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .5px;
@@ -54,16 +54,16 @@
 
 /* ── VOLUNTEER ──────────────────────────────────────────────── */
 #volunteer {
-  background: linear-gradient(155deg, var(--dark) 0%, var(--navy) 100%);
-  color: var(--white);
+  background: linear-gradient(155deg, v.$dark 0%, v.$navy 100%);
+  color: v.$white;
 }
 
 #volunteer h2 {
-  color: var(--white);
+  color: v.$white;
 }
 
 #volunteer .sec-label {
-  color: var(--sky);
+  color: v.$sky;
 }
 
 #volunteer .sec-sub {
@@ -131,7 +131,7 @@
 .vol-role h4 {
   font-size: .95rem;
   font-weight: 600;
-  color: var(--white);
+  color: v.$white;
   margin-bottom: .3rem;
 }
 
@@ -152,7 +152,7 @@
 .vol-form h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: var(--white);
+  color: v.$white;
   margin-bottom: 1.5rem;
 }
 
@@ -176,7 +176,7 @@
   background: rgba(255, 255, 255, .07);
   border: 1px solid rgba(255, 255, 255, .12);
   border-radius: 8px;
-  color: var(--white);
+  color: v.$white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: .88rem;
   outline: none;
@@ -191,13 +191,13 @@
 .fg input:focus,
 .fg select:focus,
 .fg textarea:focus {
-  border-color: var(--sky);
+  border-color: v.$sky;
   box-shadow: 0 0 0 3px rgba(74, 144, 217, .15);
 }
 
 .fg select option {
-  background: var(--navy);
-  color: var(--white);
+  background: v.$navy;
+  color: v.$white;
 }
 
 .fg textarea {
@@ -225,7 +225,7 @@
 .form-ok h4 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: var(--white);
+  color: v.$white;
 }
 
 .form-ok p {
@@ -236,7 +236,7 @@
 
 /* ── CONTACT ────────────────────────────────────────────────── */
 #contact {
-  background: var(--white);
+  background: v.$white;
 }
 
 .contact-wrap {
@@ -265,7 +265,7 @@
   height: 46px;
   border-radius: 10px;
   flex-shrink: 0;
-  background: linear-gradient(135deg, var(--navy), var(--blue));
+  background: linear-gradient(135deg, v.$navy, var(--blue));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,13 +277,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .5px;
-  color: var(--navy);
+  color: v.$navy;
   margin-bottom: .2rem;
 }
 
 .cinfo p,
 .cinfo a {
-  color: var(--slate);
+  color: v.$slate;
   font-size: .9rem;
   text-decoration: none;
   font-weight: 300;
@@ -291,7 +291,7 @@
 }
 
 .cinfo a:hover {
-  color: var(--sky);
+  color: v.$sky;
 }
 
 .contact-socials {
@@ -303,7 +303,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--slate);
+  color: v.$slate;
   margin-bottom: .9rem;
 }
 
@@ -323,18 +323,18 @@
   font-size: .9rem;
   font-weight: 700;
   text-decoration: none;
-  color: var(--slate);
+  color: v.$slate;
   transition: background .2s, border-color .2s, color .2s;
 }
 
 .soc:hover {
-  background: var(--navy);
-  border-color: var(--navy);
+  background: v.$navy;
+  border-color: v.$navy;
   color: white;
 }
 
 .contact-form-box {
-  background: var(--offwhite);
+  background: v.$offwhite;
   border-radius: 20px;
   padding: 2.8rem;
   border: 1px solid rgba(13, 43, 94, .08);
@@ -343,7 +343,7 @@
 .contact-form-box h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
-  color: var(--navy);
+  color: v.$navy;
   margin-bottom: 1.5rem;
 }
 
@@ -355,7 +355,7 @@
   display: block;
   font-size: .77rem;
   font-weight: 600;
-  color: var(--slate);
+  color: v.$slate;
   margin-bottom: .4rem;
 }
 
@@ -364,10 +364,10 @@
 .fgl textarea {
   width: 100%;
   padding: .72rem 1rem;
-  background: var(--white);
+  background: v.$white;
   border: 1.5px solid rgba(13, 43, 94, .1);
   border-radius: 8px;
-  color: var(--navy);
+  color: v.$navy;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: .88rem;
   outline: none;
@@ -377,7 +377,7 @@
 .fgl input:focus,
 .fgl select:focus,
 .fgl textarea:focus {
-  border-color: var(--sky);
+  border-color: v.$sky;
   box-shadow: 0 0 0 3px rgba(74, 144, 217, .1);
 }
 
@@ -405,11 +405,11 @@
 .contact-ok h4 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: var(--navy);
+  color: v.$navy;
   margin: .5rem 0;
 }
 
 .contact-ok p {
-  color: var(--slate);
+  color: v.$slate;
   font-size: .88rem;
 }

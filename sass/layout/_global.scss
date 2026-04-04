@@ -88,7 +88,7 @@ body::before {
 .btn-submit {
   width: 100%;
   padding: .9rem;
-  background: linear-gradient(135deg, var(--pink), var(--magenta));
+  background: linear-gradient(135deg, v.$pink, v.$magenta);
   color: v.$white;
   border: none;
   border-radius: 8px;

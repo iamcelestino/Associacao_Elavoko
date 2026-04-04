@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #impact {
-  background: var(--offwhite);
+  background: #F4F8FF;
 }
 
 .impact-grid {
@@ -11,7 +11,7 @@
 }
 
 .impact-card {
-  background: var(--white);
+  background: #FFFFFF;
   border-radius: 16px;
   padding: 2rem;
   border: 1px solid rgba(13, 43, 94, 0.07);
@@ -33,11 +33,11 @@
   font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   font-weight: 900;
-  color: var(--navy);
+  color: #0D2B5E;
 }
 
 .impact-label {
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -52,16 +52,16 @@
 
 /* ── VOLUNTEER ──────────────────────────────────────────────── */
 #volunteer {
-  background: linear-gradient(155deg, var(--dark) 0%, var(--navy) 100%);
-  color: var(--white);
+  background: linear-gradient(155deg, #060D1A 0%, #0D2B5E 100%);
+  color: #FFFFFF;
 }
 
 #volunteer h2 {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 #volunteer .sec-label {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 #volunteer .sec-sub {
@@ -129,7 +129,7 @@
 .vol-role h4 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--white);
+  color: #FFFFFF;
   margin-bottom: 0.3rem;
 }
 
@@ -150,7 +150,7 @@
 .vol-form h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  color: var(--white);
+  color: #FFFFFF;
   margin-bottom: 1.5rem;
 }
 
@@ -174,7 +174,7 @@
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  color: var(--white);
+  color: #FFFFFF;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.88rem;
   outline: none;
@@ -189,13 +189,13 @@
 .fg input:focus,
 .fg select:focus,
 .fg textarea:focus {
-  border-color: var(--sky);
+  border-color: #4A90D9;
   box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
 }
 
 .fg select option {
-  background: var(--navy);
-  color: var(--white);
+  background: #0D2B5E;
+  color: #FFFFFF;
 }
 
 .fg textarea {
@@ -223,7 +223,7 @@
 .form-ok h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 .form-ok p {
@@ -234,7 +234,7 @@
 
 /* ── CONTACT ────────────────────────────────────────────────── */
 #contact {
-  background: var(--white);
+  background: #FFFFFF;
 }
 
 .contact-wrap {
@@ -263,7 +263,7 @@
   height: 46px;
   border-radius: 10px;
   flex-shrink: 0;
-  background: linear-gradient(135deg, var(--navy), var(--blue));
+  background: linear-gradient(135deg, #0D2B5E, var(--blue));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,13 +275,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--navy);
+  color: #0D2B5E;
   margin-bottom: 0.2rem;
 }
 
 .cinfo p,
 .cinfo a {
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.9rem;
   text-decoration: none;
   font-weight: 300;
@@ -289,7 +289,7 @@
 }
 
 .cinfo a:hover {
-  color: var(--sky);
+  color: #4A90D9;
 }
 
 .contact-socials {
@@ -301,7 +301,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--slate);
+  color: #64748B;
   margin-bottom: 0.9rem;
 }
 
@@ -321,18 +321,18 @@
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
-  color: var(--slate);
+  color: #64748B;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .soc:hover {
-  background: var(--navy);
-  border-color: var(--navy);
+  background: #0D2B5E;
+  border-color: #0D2B5E;
   color: white;
 }
 
 .contact-form-box {
-  background: var(--offwhite);
+  background: #F4F8FF;
   border-radius: 20px;
   padding: 2.8rem;
   border: 1px solid rgba(13, 43, 94, 0.08);
@@ -341,7 +341,7 @@
 .contact-form-box h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.6rem;
-  color: var(--navy);
+  color: #0D2B5E;
   margin-bottom: 1.5rem;
 }
 
@@ -353,7 +353,7 @@
   display: block;
   font-size: 0.77rem;
   font-weight: 600;
-  color: var(--slate);
+  color: #64748B;
   margin-bottom: 0.4rem;
 }
 
@@ -362,10 +362,10 @@
 .fgl textarea {
   width: 100%;
   padding: 0.72rem 1rem;
-  background: var(--white);
+  background: #FFFFFF;
   border: 1.5px solid rgba(13, 43, 94, 0.1);
   border-radius: 8px;
-  color: var(--navy);
+  color: #0D2B5E;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.88rem;
   outline: none;
@@ -375,7 +375,7 @@
 .fgl input:focus,
 .fgl select:focus,
 .fgl textarea:focus {
-  border-color: var(--sky);
+  border-color: #4A90D9;
   box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.1);
 }
 
@@ -403,11 +403,11 @@
 .contact-ok h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  color: var(--navy);
+  color: #0D2B5E;
   margin: 0.5rem 0;
 }
 
 .contact-ok p {
-  color: var(--slate);
+  color: #64748B;
   font-size: 0.88rem;
 }
