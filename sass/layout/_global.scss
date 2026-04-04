@@ -32,7 +32,7 @@ body::before {
 /* ── BUTTONS ─────────────────────────────────────────────────── */
 .btn-primary {
   display: inline-block;
-  background: linear-gradient(135deg, var(--pink), var(--magenta));
+  background: linear-gradient(135deg, v.$pink, v.$magenta);
   color: v.$white;
   padding: .9rem 2rem;
   border-radius: 6px;
