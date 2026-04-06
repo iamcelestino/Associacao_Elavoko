@@ -70,7 +70,7 @@
 .slide {
   min-width: 100%;
   position: relative;
-  height: 460px;
+  height: 660px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -202,6 +202,11 @@
   font-size: 2.5rem;
 }
 
+.g-thumb img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
 .g-thumb.active {
   border-color: v.$sky;
   transform: scale(1.04);
@@ -295,21 +300,17 @@
   box-shadow: 0 20px 50px rgba(13, 43, 94, .1);
 }
 
-.team-photo {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
+// .team-photo {
+//   height: 180px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   overflow: hidden;
+// }
 
-.team-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: v.$white;
-  border: 3px solid rgba(255, 255, 255, .4);
+.team-avatar img {
+  max-width: 100%;
   box-shadow: 0 4px 20px rgba(13, 43, 94, .15);
   display: flex;
   align-items: center;
