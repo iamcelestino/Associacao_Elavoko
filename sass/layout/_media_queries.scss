@@ -62,7 +62,17 @@
     padding: 1.5rem 5vw;
     gap: .3rem;
     border-bottom: 1px solid rgba(74, 144, 217, .15);
+
+    li{
+      margin-bottom: 1rem;
+    }
+
+    a {
+      font-size: 25px;
+    }
+
   }
+
 
   .nav-links.open {
     display: flex;
@@ -102,7 +112,7 @@
   }
 
   .impact-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .slide {

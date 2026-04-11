@@ -2318,6 +2318,12 @@ footer {
     gap: 0.3rem;
     border-bottom: 1px solid rgba(74, 144, 217, 0.15);
   }
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+  .nav-links a {
+    font-size: 25px;
+  }
   .nav-links.open {
     display: flex;
   }
@@ -2347,7 +2353,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
   .impact-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .slide {
     height: 300px;
